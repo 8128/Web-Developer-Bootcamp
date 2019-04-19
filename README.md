@@ -53,15 +53,54 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 <ul>
   <li>unordered bullet point</li>
 </ul>
+<img src="aaa.png">
+<a href="url">Link Text</a>
 ```
 
 ### Divs and Spans
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div
 
+div is a block level element, span in a in line container
 
+### Tables
 
+```html
+<table>
+  <thead>
+    <tr>
+      <th>h1</th>
+      <th>h2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a</td>
+      <td>b</td>
+    </tr>
+  </tbody>
+</table>
+```
 
+Tr for each row
+
+td for each element
+
+### Inputs
+
+```html
+<form action="some url" method="POST">
+  <input type="text">
+  <input type="color">
+  <input type="radio">
+  <input name="password" type="password" placeholder="password">
+  <input name="username" type="text" placeholder="username">
+  <button>Submit</button>
+  <input type="submit">
+</form>
+```
+
+placeholder is the information shown inside the input box
 
 
 
