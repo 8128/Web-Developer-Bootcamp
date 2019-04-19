@@ -93,14 +93,42 @@ td for each element
   <input type="text">
   <input type="color">
   <input type="radio">
-  <input name="password" type="password" placeholder="password">
-  <input name="username" type="text" placeholder="username">
+  <input type="email">
+  <input type="checkbox">
+  
+  <!-- if you want only one radio box be checked you can use the same name attribute, to disginush the value, set value-->
+	<form>
+    <input name="a" type="radio" value="dog">
+    <input name="a" type="radio" value="cat">
+    
+    <!-- only if a name is set can info be conveyed-->
+    <!-- the default value sent will be option, unless you set values-->
+    <select name="color">
+      <options>a</options>
+      <options>a</options>
+      <options>a</options>
+    </select>
+    
+    <textarea name="paragraph" rows="10" cols="10"></textarea>
+  </form>
+  
+	<!-- placeholder is the information shown inside the input box-->
+  <label>
+    Username:<input name="username" type="text" placeholder="username">
+  </label>
+  <label>
+    Password:<input name="password" type="password" placeholder="password">
+  </label>
+  
+  <label for="username">Username:</label>
+  <input id="username" name="username" type="text" placeholder="username" required>
+  <!-- restriction on password -->
+  <label for"password">Password:</label>
+  <input id="password" name="password" type="password" pattern=".{5,10}" requiredtitle="password must be bewteen 5 an 10" placeholder="password">
+  
   <button>Submit</button>
   <input type="submit">
 </form>
 ```
 
-placeholder is the information shown inside the input box
-
-
-
+## CSS
