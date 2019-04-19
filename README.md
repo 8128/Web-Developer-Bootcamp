@@ -26,11 +26,11 @@ https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML
 
 ### Doctype
 
-HTML always start with <!DOCTYPE HTML>
+HTML always start with 
 
-HTML root element <html> represents the root of an HTML document
-
-Permitted content: one <head> element and one <body>
+```html
+<!DOCTYPE HTML>
+```
 
 ### Comments
 
@@ -42,7 +42,22 @@ Permitted content: one <head> element and one <body>
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
+```html
+<strong></strong>
+<em>emphasize</em>
+<i>italic</i>
+<p>paragraph</p>
+<ol>
+  <li>ordered bullet point</li>
+</ol>
+<ul>
+  <li>unordered bullet point</li>
+</ul>
+```
 
+### Divs and Spans
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div
 
 
 
