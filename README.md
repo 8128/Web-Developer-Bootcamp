@@ -34,7 +34,9 @@ Permitted content: one <head> element and one <body>
 
 ### Comments
 
+```html
 <!-- this is a comment-->
+```
 
 ### Elements
 
