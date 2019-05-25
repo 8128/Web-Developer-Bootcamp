@@ -132,3 +132,150 @@ td for each element
 ```
 
 ## CSS
+
+### How to use CSS:
+
+1. The first way is to add the script below
+
+   ```html
+   <style type="text/css">
+     <!-- write your css code here -->
+     h1 {
+       color:purple;
+     }
+   </style>
+   ```
+
+2. write the css file seperatly and use a link tag
+
+   ```html
+   <link rel="stylesheet" type="text/css" href="app.css">
+   ```
+
+### Color
+
+You can find colors here[colors](http://colours.neilorangepeel.com), or you can use the Hexadecimal
+
+### Background
+
+You can set the background to any color
+
+```css
+body{
+	background: red;
+	/* or you can use a image, and the image will be tightened to the whole screen */
+	background: url(...);
+	background-repeat: no-repeat;
+	/* strech */
+  background-size: cover;
+}
+```
+
+### Border
+
+You have to set all color, width and style to see the result
+
+```css
+h1 {
+  color: rgba(0,200,100,0.8);
+  border-color: purple;
+  border-width: 5px;
+  border-style: solid;
+  /* or using */
+  border: 5px dashed purple;
+}
+```
+
+### Selector
+
+1. set the id in the html, and then you can use #id to change the certain style of it.
+
+2. But id is limited to one, so if you want to change severl, you can use the class, and use .classname in the css file
+
+3. star select will select everything on the page
+
+   ```css
+   * {
+     color: green;
+   }
+   ```
+   
+4. [desxendant selector]consecutive selector will find the sub one, eg. the below one will find the lind inside of a bullet point
+
+   ```css
+   ul li a {
+     
+   }
+   ```
+
+5. [adjacent selector]this one will select the adjancent h4 and ul together
+
+   ```css
+   h4 + ul{
+     
+   }
+   ```
+
+6. [attribute selector] 
+
+   ```css
+   a[href="http://www.google.com"]{
+   }
+   ```
+
+7. nth of type
+
+   ```css
+   ul: nth-of-type(3){
+   } 
+   ```
+
+### Font
+
+```css
+h1{
+  font-size:200px;
+  font-size: 2.0em;/*double the size of enclosing emelemt of the parent element*/
+  font-weight: normal/bold;
+  line-height: 1.5;
+  text-align: right;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+```
+
+Becaues the initial size of the em is not certain, you can set the body font size firstly
+
+To use a google font, add it to the head of the file, and then use the font-family=""
+
+### Box Model
+
+- Content
+
+  width and height
+
+- Padding
+
+- Border
+
+- Margin
+
+  Margin: 20px 40px 500px 100px//top right bottom left
+
+Float:left then the next box will adjacent to the left of the box
+
+
+
+## Bootstrap4
+
+### Container class
+
+You can get a dive with padding on the side with class container. And it will also be centered.
+
+### Form Group class
+
+Yon can get several from divided by a little gap if you use form group class
+
+### Form Control class
+
+Set the position insied of a div
