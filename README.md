@@ -266,7 +266,7 @@ Float:left then the next box will adjacent to the left of the box
 
 
 
-## Bootstrap4
+## Bootstrap 3
 
 ### Container class
 
@@ -278,4 +278,94 @@ Yon can get several from divided by a little gap if you use form group class
 
 ### Form Control class
 
-Set the position insied of a div
+Set the position inside of a div
+
+### Thumbnail class
+
+It will resize the pic to a thumbnail that fit into your column
+
+### Grid System
+
+Bootstrap has a twelve columns system
+
+eg. col-lg-6 means column large 6
+
+The grid system has four sizes, xs:extra small, sm:small,md:medium and lg:large
+
+## Bootstrap 4
+
+### Display class
+
+A more significant way for displaying
+
+### Blockquote
+
+for quote
+
+### New rem scale
+
+There is a base rem, you can change the base element.style:font-size to a number, and rem will be the certain scale of that number
+
+### Border Spacing
+
+Spacing utilities that apply to all breakpoints, from `xs` to `xl`, have no breakpoint abbreviation in them. This is because those classes are applied from `min-width: 0` and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.
+
+The classes are named using the format `{property}{sides}-{size}` for `xs` and `{property}{sides}-{breakpoint}-{size}` for `sm`, `md`, `lg`, and `xl`.
+
+The default breakpoint of it is xs, and you should add sm,md,lg and xl for others, or they will just use the default one
+
+Where *property* is one of:
+
+- `m` - for classes that set `margin`
+- `p` - for classes that set `padding`
+
+Where *sides* is one of:
+
+- `t` - for classes that set `margin-top` or `padding-top`
+- `b` - for classes that set `margin-bottom` or `padding-bottom`
+- `l` - for classes that set `margin-left` or `padding-left`
+- `r` - for classes that set `margin-right` or `padding-right`
+- `x` - for classes that set both `*-left` and `*-right`
+- `y` - for classes that set both `*-top` and `*-bottom`
+- blank - for classes that set a `margin` or `padding` on all 4 sides of the element
+
+Where *size* is one of:
+
+- `0` - for classes that eliminate the `margin` or `padding` by setting it to `0`
+- `1` - (by default) for classes that set the `margin` or `padding` to `$spacer * .25`
+- `2` - (by default) for classes that set the `margin` or `padding` to `$spacer * .5`
+- `3` - (by default) for classes that set the `margin` or `padding` to `$spacer`
+- `4` - (by default) for classes that set the `margin` or `padding` to `$spacer * 1.5`
+- `5` - (by default) for classes that set the `margin` or `padding` to `$spacer * 3`
+- `auto` - for classes that set the `margin` to auto
+
+(You can add more sizes by adding entries to the `$spacers` Sass map variable.)
+
+###  Display
+
+The old 3 version use invisible and hide, but the new version does not, using the display instead
+
+Display utility classes that apply to all [breakpoints](https://getbootstrap.com/docs/4.3/layout/overview/#responsive-breakpoints), from `xs` to `xl`, have no breakpoint abbreviation in them. This is because those classes are applied from `min-width: 0;` and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.
+
+As such, the classes are named using the format:
+
+- `.d-{value}` for `xs`
+- `.d-{breakpoint}-{value}` for `sm`, `md`, `lg`, and `xl`.
+
+Where *value* is one of:
+
+- `none`
+- `inline`
+- `inline-block`
+- `block`
+- `table`
+- `table-cell`
+- `table-row`
+- `flex`
+- `inline-flex`
+
+The display values can be altered by changing the `$displays` variable and recompiling the SCSS.
+
+The media queries effect screen widths with the given breakpoint *or larger*. For example, `.d-lg-none` sets `display: none;` on both `lg` and `xl` screens.
+
+##  
