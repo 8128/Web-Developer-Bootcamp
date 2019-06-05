@@ -55,6 +55,8 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 </ul>
 <img src="aaa.png">
 <a href="url">Link Text</a>
+<br>
+<hr>
 ```
 
 ### Divs and Spans
@@ -292,11 +294,30 @@ eg. col-lg-6 means column large 6
 
 The grid system has four sizes, xs:extra small, sm:small,md:medium and lg:large
 
+### @media
+
+You can add some controls in the @media, eg. @media (max-width : 1200px)
+
 ## Bootstrap 4
 
 ### Display class
 
 A more significant way for displaying
+
+| Screen Size        | Class                            |
+| ------------------ | -------------------------------- |
+| Hidden on all      | `.d-none`                        |
+| Hidden only on xs  | `.d-none .d-sm-block`            |
+| Hidden only on sm  | `.d-sm-none .d-md-block`         |
+| Hidden only on md  | `.d-md-none .d-lg-block`         |
+| Hidden only on lg  | `.d-lg-none .d-xl-block`         |
+| Hidden only on xl  | `.d-xl-none`                     |
+| Visible on all     | `.d-block`                       |
+| Visible only on xs | `.d-block .d-sm-none`            |
+| Visible only on sm | `.d-none .d-sm-block .d-md-none` |
+| Visible only on md | `.d-none .d-md-block .d-lg-none` |
+| Visible only on lg | `.d-none .d-lg-block .d-xl-none` |
+| Visible only on xl | `.d-none .d-xl-block`            |
 
 ### Blockquote
 
@@ -368,4 +389,17 @@ The display values can be altered by changing the `$displays` variable and recom
 
 The media queries effect screen widths with the given breakpoint *or larger*. For example, `.d-lg-none` sets `display: none;` on both `lg` and `xl` screens.
 
-##  
+## Javascript
+
+### Primitive Types
+
+These six types are considered to be *primitives*. A primitive is not an object and has no methods of its own. All *primitives are immutable*.
+
+- [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) — true or false
+- [Null](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/null) — no value
+- [Undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined) — a declared variable but hasn’t been given a value
+- [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) — integers, floats, etc
+- [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) — an array of characters i.e words
+- [Symbol](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/) — a unique value that's not equal to any other value
+
+###  
