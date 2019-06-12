@@ -402,4 +402,9 @@ These six types are considered to be *primitives*. A primitive is not an object 
 - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) — an array of characters i.e words
 - [Symbol](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/) — a unique value that's not equal to any other value
 
-###  
+###  Built-in Method
+
+1. clear()
+2. alert()
+3. Console.log()
+4. prompt()可输入的提示框
