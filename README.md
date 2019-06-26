@@ -408,3 +408,7 @@ These six types are considered to be *primitives*. A primitive is not an object 
 2. alert()
 3. Console.log()
 4. prompt()可输入的提示框
+
+### Boolean Logic
+
+== means equal, but this equalization doesn't mean that there type should be the same. For example, 1 == "1" is true, but 1==="1" is false. Only if you use the "===" can the type be matched.
