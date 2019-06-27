@@ -412,3 +412,9 @@ These six types are considered to be *primitives*. A primitive is not an object 
 ### Boolean Logic
 
 == means equal, but this equalization doesn't mean that there type should be the same. For example, 1 == "1" is true, but 1==="1" is false. Only if you use the "===" can the type be matched.
+
+Some special cases:
+
+- True == "1" false==0
+- Null == undefined
+- NaN == NaN
