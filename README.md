@@ -418,3 +418,16 @@ Some special cases:
 - True == "1" false==0
 - Null == undefined
 - NaN == NaN
+
+Truthy and falsy values:
+
+Values that aren't acutually true or false, are still inherently "truthy" or "falsey" when evaluated in a boolean context
+
+Falsy values:
+
+- false
+- 0
+- ""
+- null
+- undefined
+- NaN
