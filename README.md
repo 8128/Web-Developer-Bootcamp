@@ -391,6 +391,8 @@ The media queries effect screen widths with the given breakpoint *or larger*. Fo
 
 ## Javascript
 
+The [`Console`](https://developer.mozilla.org/en-US/docs/Web/API/Console) method **dir()** displays an interactive list of the properties of the specified JavaScript object. The output is presented as a hierarchical listing with disclosure triangles that let you see the contents of child objects.
+
 ### Primitive Types
 
 These six types are considered to be *primitives*. A primitive is not an object and has no methods of its own. All *primitives are immutable*.
@@ -431,3 +433,38 @@ Falsy values:
 - null
 - undefined
 - NaN
+
+### For each
+
+arrayname.forEach(function(name){
+
+​	alert("inside the foreach"+name);
+
+});
+
+name will be the var
+
+### Object
+
+usually the objects are shown as JSON, you can access them by using person.name or parson["name"], but in some situations you cannot:
+
+- you cannot use dot notation if the property starts with a number
+- you can looking up using a variable with bracket notation
+- you cannot use dot notation for property names with space
+
+## DOM
+
+### Select an element
+
+Var h1 = document.querySelector("h1");
+
+use the name for the tag, use sharp # for id, and use . for class
+
+var tag = document.getElementById("highlight");
+
+getElementsByClassName();
+
+getElementsByTagName();
+
+quertSelectorAll(): return a list of elements that matches a given CSS-style selector
+
