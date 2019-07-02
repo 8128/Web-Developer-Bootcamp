@@ -468,3 +468,22 @@ getElementsByTagName();
 
 quertSelectorAll(): return a list of elements that matches a given CSS-style selector
 
+### Manipulate styles
+
+you can add features to an object by select them, or you can add a new class to its style, for example:
+
+var tag = document.getElementById("highlight");
+
+Tag.classList.add/remove/toggle("some-class");
+
+### Manipulate context
+
+.textContent
+
+.innerHTML will give you the whole string inside the HTML tag(including tags)
+
+If you use the textcontent and use the tags inside of it, the tag will show up as string, but innerHTML will show the tag style
+
+### Manipulate attribute
+
+.setAttritube("attritube-name","value");
