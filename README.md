@@ -487,3 +487,29 @@ If you use the textcontent and use the tags inside of it, the tag will show up a
 ### Manipulate attribute
 
 .setAttritube("attritube-name","value");
+
+## jQuery
+
+### Selecting with jQuery
+
+$("selectorGoesHere")
+
+this will return a list including all the elements
+
+### Manipulate Styles
+
+use .css to change the css
+
+Eg. $("li").css("color", "yellow")
+
+or use a variable:
+
+```javascript
+var style={
+	backgroundColor = "pink",
+	fontWeight: "bold"
+};
+
+$("#special").css(styles);
+```
+
